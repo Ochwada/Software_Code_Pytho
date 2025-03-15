@@ -10,16 +10,16 @@ Many of the company's customers are **wholesalers (B2B)**, leading to potentiall
 ## **Dataset Attributes**  
 The dataset includes the following attributes:  
 
-| **Column Name**  | **Description**  | **Data Type**  |  
-|-----------------|-----------------|--------------|  
-| **InvoiceNo**  | Unique invoice number for each transaction (6-digit). If it starts with ‘C’, it indicates a cancellation. | *Nominal (Categorical)* |  
-| **StockCode**  | Unique product (item) identifier (5-digit). | *Nominal (Categorical)* |  
-| **Description**  | Name or description of the product/item. | *Nominal (Categorical)* |  
-| **Quantity**  | Number of units purchased per transaction. | *Numeric* |  
-| **InvoiceDate**  | Date and time when the transaction was recorded. | *Datetime (Numeric)* |  
-| **UnitPrice**  | Price per unit of the product in sterling (£). | *Numeric (Float)* |  
-| **CustomerID**  | Unique customer identifier (5-digit). | *Nominal (Categorical)* |  
-| **Country**  | Name of the country where the customer is based. | *Nominal (Categorical)* |  
+| **Column Name**  | **Description**  | **Data Type**  |
+|-----------------|-----------------|--------------|
+| **InvoiceNo**  | Unique invoice number for each transaction (6-digit). If it starts with ‘C’, it indicates a cancellation. | *Nominal (Categorical)* |
+| **StockCode**  | Unique product (item) identifier (5-digit). | *Nominal (Categorical)* |
+| **Description**  | Name or description of the product/item. | *Nominal (Categorical)* |
+| **Quantity**  | Number of units purchased per transaction. | *Numeric* |
+| **InvoiceDate**  | Date and time when the transaction was recorded. | *Datetime (Numeric)* |
+| **UnitPrice**  | Price per unit of the product in sterling (£). | *Numeric (Float)* |
+| **CustomerID**  | Unique customer identifier (5-digit). | *Nominal (Categorical)* |
+| **Country**  | Name of the country where the customer is based. | *Nominal (Categorical)* |
 
 ---
 
@@ -43,21 +43,21 @@ The goal of this analysis is to calculate **Customer Lifetime Value (CLV)** by a
 - Calculating **Total Revenue** per transaction:  
   ```python
   TotalPrice = Quantity * UnitPrice
-### **3. Feature Engineering**
+  ```  
 - **Extracting transaction frequency per customer.**  
 - **Determining recency**, i.e., how recently a customer made a purchase.  
 - **Segmenting customers using RFM (Recency, Frequency, Monetary) analysis.**  
 
 ---
 
-### **4. CLV Estimation Methods**  
+### **3. CLV Estimation Methods**  
 - **Historical CLV:** Using past transaction data to estimate CLV.  
 - **Predictive CLV:** Applying probabilistic models (e.g., BG/NBD model, Gamma-Gamma model).  
 - **Machine Learning-Based CLV:** Using regression models or deep learning for CLV predictions.  
 
 ---
 
-### **5. Customer Segmentation & Insights**  
+### **4. Customer Segmentation & Insights**  
 - **Identifying high-value customers** for targeted retention strategies.  
 - **Finding patterns in low-value or churn-prone customers.**  
 - **Analyzing CLV trends across different countries.**  
